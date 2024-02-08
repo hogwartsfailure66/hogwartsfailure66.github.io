@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
+import { FIRST_NAME, LAST_NAME } from "../data/personalData";
+
 const Navbar = () => {
   const links = [
     { id: 1, link: "home" },
@@ -15,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="fixed flex justify-between items-center w-full h-20 text-white bg-black px-4">
       <div>
-        <h1 className="text-5xl font-signature ml-2">Hogwartsfailure66</h1>
+        <h1 className="text-5xl font-signature ml-2">{`${FIRST_NAME} ${LAST_NAME}`}</h1>
       </div>
 
       <div
